@@ -5,13 +5,14 @@
 body {
     margin: 0;
     font-family: 'Georgia', serif;
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: #bee5cf;
+    color: #09351b;
 }
 
 nav {
-    background-color: #eee;
+    background-color:	#5cbe86;
     font-weight: 400;
+    color: #cce7d8
 }
 
 nav ul {
@@ -48,20 +49,29 @@ nav li:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 4vw;
+    gap: 0vw;
     align-items: stretch;
     justify-content: center;
 }
 
-.main-col, .contact-col, .page-col {
+.contact-col, .page-col, .cv-col {
     border-radius: 5%;
-    background-color: #eee;
     padding: 20px 40px;
     justify-content: center;
+
+}
+
+.cv-col p {
+    font-size: 1.15em;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 1em;
 }
 
 .contact-col {
     flex:1;
+    background-color: #a6e6c1;
+    color: #304e3c;
 }
 
 .page-col h1 {
@@ -77,13 +87,13 @@ nav li:hover {
   margin-bottom: 1em;
 }
 
-.page-col ul {
+.bio-text ul {
     list-style-image: url("assets/ico.png");
     padding-left: 20px;  /* gives space for bullets */
     margin: 0;
 }
 
-.page-col li {
+.bio-text li {
     font-size: 1.15em;
     margin-bottom: 8px;
     line-height: 1.6;
@@ -92,14 +102,23 @@ nav li:hover {
 
 .photo-col img {
     width: 25vw;
-    border-radius: 5%;
 }
+
+.photo-col-cv img {
+    width: 23vw;
+    margin: 20px 0px;
+}
+
+.photo-col-research img {
+    width: 30vw;
+    margin: 20px 20px;
+}
+
 
 .bio-text {
   background: rgba(255, 255, 255, 0.01);
   padding: 36px 40px;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -126,7 +145,7 @@ nav li:hover {
     display: flex;
     flex-direction: row;
     gap: 4vw;
-    justify-content: center;
+    justify-content: left;
 }
 
 @media (max-width: 1000px) {
@@ -138,10 +157,5 @@ nav li:hover {
         gap: 1vw;
         align-items: center;
         justify-content: center;
-    }
-
-    .photo-col img{
-        width: 40vw;
-        border-radius: 5%;
     }
 }
