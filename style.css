@@ -46,7 +46,7 @@ nav li:hover {
 .page-content {
     margin: 20px 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     gap: 4vw;
     align-items: stretch;
@@ -60,9 +60,73 @@ nav li:hover {
     justify-content: center;
 }
 
+.contact-col {
+    flex:1;
+}
+
+.page-col h1 {
+  font-size: 1.65em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.page-col p {
+  font-size: 1.15em;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.page-col ul {
+    list-style-image: url("assets/ico.png");
+    padding-left: 20px;  /* gives space for bullets */
+    margin: 0;
+}
+
+.page-col li {
+    font-size: 1.15em;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+
 .photo-col img {
     width: 25vw;
     border-radius: 5%;
+}
+
+.bio-text {
+  background: rgba(255, 255, 255, 0.01);
+  padding: 36px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.bio-text h1 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.bio-text p {
+  font-size: 1.15em;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.bio-text {
+    flex: 3.5;
+}
+
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    justify-content: center;
 }
 
 @media (max-width: 1000px) {
