@@ -5,14 +5,14 @@
 body {
     margin: 0;
     font-family: 'Georgia', serif;
-    background-color: #bee5cf;
-    color: #09351b;
+    background-color: #fefae0;
+    color: #283618;
 }
 
 nav {
-    background-color:	#5cbe86;
+    background-color:	#606c38;
     font-weight: 400;
-    color: #cce7d8
+    color: #fefae0
 }
 
 nav ul {
@@ -41,7 +41,11 @@ nav li {
 
 nav li:hover {
     text-decoration: underline;
-    color: rgb(74, 121, 64);
+    color: #283618;
+}
+
+a {
+    color: #606c38;
 }
 
 .page-content {
@@ -70,8 +74,8 @@ nav li:hover {
 
 .contact-col {
     flex:1;
-    background-color: #a6e6c1;
-    color: #304e3c;
+    background-color: #dda25e2a;
+    color: #bc6c25;
 }
 
 .page-col h1 {
@@ -104,14 +108,24 @@ nav li:hover {
     width: 25vw;
 }
 
-.photo-col-cv img {
-    width: 23vw;
+.photo-block {
+    margin: 0;
+}
+
+.photo-block figcaption {
+    font-size: 0.85em;
+    color: #283618;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.photo-block img {
+    width: 30vw;
     margin: 20px 0px;
 }
 
-.photo-col-research img {
-    width: 30vw;
-    margin: 20px 20px;
+.photo-col-cv img {
+    width: 23vw;
 }
 
 
